@@ -1,6 +1,7 @@
 package com.wcisang.detail.ui
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
 import coil.transform.CircleCropTransformation
@@ -15,7 +16,16 @@ class GistDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gist_detail)
+        setupToolbar()
         getGistItem()
+    }
+
+    private fun setupToolbar() {
+        supportActionBar?.run {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+            title = getString(R.string.detail_title)
+        }
     }
 
     private fun getGistItem() {
@@ -42,4 +52,10 @@ class GistDetailActivity : AppCompatActivity() {
         }
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home)
+            onBackPressed()
+
+        return super.onOptionsItemSelected(item)
+    }
 }
