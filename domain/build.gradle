@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply from: '../gradle_util/android-build.gradle'
+
+dependencies {
+    implementation Libs.jackson
+    implementation Libs.koin
+    implementation Libs.coroutines
+
+    testImplementation project(Module.testUtils)
+    testImplementation LibsTest.jUnit
+    testImplementation LibsTest.mockk
+    testImplementation LibsTest.coroutinesTest
+}

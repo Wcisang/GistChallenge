@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+apply from: '../gradle_util/android-build.gradle'
+
+dependencies {
+
+    implementation project(Module.domain)
+    implementation project(Module.common)
+    implementation Libs.material
+    implementation LibsTest.mockk
+    implementation LibsTest.robolectric
+    api LibsTest.koinTest
+    implementation LibsTest.espressoCore
+    implementation LibsTest.espressoContrib
+
+}

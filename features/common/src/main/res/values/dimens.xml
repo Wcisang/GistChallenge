@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_three_quarters">6dp</dimen>
+    <dimen name="dimen_one">8dp</dimen>
+    <dimen name="dimen_two">16dp</dimen>
+    <dimen name="dimen_three">24dp</dimen>
+
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+
+    <dimen name="image_owner_size">50dp</dimen>
+    <dimen name="image_owner_size_large">80dp</dimen>
+    <dimen name="image_star_size">35dp</dimen>
+    <dimen name="pb_loading_size">50dp</dimen>
+</resources>

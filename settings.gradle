@@ -1,0 +1,12 @@
+include ':navigation'
+include ':customViews'
+include ':testUtils'
+include ':common'
+include ':features:favorites'
+include ':features:detail'
+include ':features:list'
+include ':features:common'
+include ':data'
+include ':domain'
+include ':app'
+rootProject.name = "GistChallenge"

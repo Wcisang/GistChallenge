@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply from: '../../gradle_util/android-build.gradle'
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation project(Module.data)
+    implementation project(Module.domain)
+    implementation project(Module.common)
+    implementation project(Module.customViews)
+    implementation project(Module.navigation)
+
+    implementation Libs.coreKtx
+    implementation Libs.appCompat
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.koin
+    implementation Libs.koinViewModel
+    implementation Libs.lifecycle
+    implementation Libs.viewModel
+    implementation Libs.paging
+
+    testImplementation project(Module.testUtils)
+    testImplementation LibsTest.jUnit
+    testImplementation LibsTest.robolectric
+    testImplementation LibsTest.espressoCore
+    testImplementation LibsTest.espressoContrib
+    testImplementation LibsTest.mockk
+    testImplementation LibsTest.coroutinesTest
+    testImplementation LibsTest.testCoreKtx
+    testImplementation LibsTest.truth
+}

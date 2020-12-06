@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply from: '../gradle_util/android-build.gradle'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation project(Module.domain)
+
+    implementation Libs.retrofit
+    implementation Libs.jacksonConverter
+    implementation Libs.okhttp
+    implementation Libs.paging
+    implementation Libs.koin
+    implementation Libs.roomKtx
+    kapt Libs.roomCompiler
+
+    testImplementation project(Module.testUtils)
+    testImplementation LibsTest.jUnit
+    testImplementation LibsTest.mockk
+    testImplementation LibsTest.coroutinesTest
+    testImplementation LibsTest.jUnitExt
+    testImplementation LibsTest.robolectric
+    testImplementation LibsTest.archTest
+    testImplementation LibsTest.truth
+}

@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+apply from: '../gradle_util/android-build.gradle'
+
+android {
+    defaultConfig {
+        applicationId BuildNames.applicationId
+    }
+}
+
+dependencies {
+
+    implementation project(Module.gistList)
+    implementation project(Module.detail)
+    implementation project(Module.favorites)
+    implementation project(Module.common)
+    implementation project(Module.domain)
+    implementation project(Module.data)
+    implementation project(Module.navigation)
+
+    implementation Libs.kotlinStd
+    implementation Libs.coreKtx
+    implementation Libs.appCompat
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.koin
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

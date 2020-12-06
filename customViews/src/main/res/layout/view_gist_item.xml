@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_one">
+
+    <ImageView
+        android:id="@+id/ivItemOwnerPhoto"
+        android:layout_width="@dimen/image_owner_size"
+        android:layout_height="@dimen/image_owner_size"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvItemOwnerName"
+        style="@style/GistChallenge.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_two"
+        app:layout_constraintBottom_toTopOf="@+id/tvItemGistType"
+        app:layout_constraintStart_toEndOf="@id/ivItemOwnerPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="William Zischang Cisang" />
+
+    <TextView
+        android:id="@+id/tvItemGistType"
+        style="@style/GistChallenge.Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_two"
+        android:layout_marginTop="@dimen/dimen_three_quarters"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivItemOwnerPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemOwnerName"
+        tools:text="text/html" />
+
+    <ImageView
+        android:id="@+id/ivAction"
+        android:layout_width="@dimen/image_star_size"
+        android:layout_height="@dimen/image_star_size"
+        android:contentDescription="@null"
+        android:layout_marginEnd="@dimen/dimen_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
