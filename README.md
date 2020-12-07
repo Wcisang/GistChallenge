@@ -26,6 +26,7 @@
 - Coroutines
 - Koin
 - Room
+- Kotlin Flow
 
 ### Bibliotecas de testes
 
