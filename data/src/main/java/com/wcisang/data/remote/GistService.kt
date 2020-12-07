@@ -6,7 +6,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 object NetworkConstants {
-    const val BASE_URL = "https://private-96d04b-gistchallenge.apiary-mock.com/"
+    const val BASE_URL = "https://api.github.com/"
 
     const val GIST_LIST_ENDPOINT = "gists/public"
     const val GIST_LIST_USER_ENDPOINT = "users/{username}/gists"
