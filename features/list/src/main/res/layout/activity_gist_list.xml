@@ -22,8 +22,9 @@
         android:id="@+id/rvGistList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchView"
-        tools:listitem="@layout/item_gist_list"/>
+        tools:listitem="@layout/item_gist_list" />
 
     <ProgressBar
         android:id="@+id/pbMainLoading"
