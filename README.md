@@ -1,4 +1,4 @@
-# GistChallenge
+# GistProject
 
 
 ### Organização de modulos
