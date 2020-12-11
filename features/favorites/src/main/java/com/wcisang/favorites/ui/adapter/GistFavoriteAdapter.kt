@@ -34,7 +34,6 @@ class GistFavoriteAdapter(
                     override fun onFavoriteGistClickListener() {
                         favoriteClickListener(gist)
                     }
-
                 }
             )
         }

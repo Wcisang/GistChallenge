@@ -32,8 +32,12 @@ class RecyclerViewMatcher private constructor(private val recyclerViewId: Int) {
                     try {
                         idDescription = this.resources!!.getResourceName(recyclerViewId)
                     } catch (var4: Resources.NotFoundException) {
-                        idDescription = String.format("%s (resource name not found)",
-                            *arrayOf<Any>(Integer.valueOf(recyclerViewId)))
+                        idDescription = String.format(
+                            "%s (resource name not found)",
+                            *arrayOf<Any>(
+                                Integer.valueOf(recyclerViewId)
+                            )
+                        )
                     }
                 }
 
@@ -45,7 +49,8 @@ class RecyclerViewMatcher private constructor(private val recyclerViewId: Int) {
                 this.resources = view.resources
 
                 if (childView == null) {
-                    val recyclerView = view.rootView.findViewById<View>(recyclerViewId) as RecyclerView
+                    val recyclerView =
+                        view.rootView.findViewById<View>(recyclerViewId) as RecyclerView
                     if (recyclerView.id == recyclerViewId) {
                         val viewHolder = recyclerView.findViewHolderForAdapterPosition(position)
                         if (viewHolder != null) {

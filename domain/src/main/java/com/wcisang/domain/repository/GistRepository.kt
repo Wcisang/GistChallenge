@@ -5,9 +5,9 @@ import kotlinx.coroutines.flow.Flow
 
 interface GistRepository {
 
-    suspend fun getGistList(page: Int, query: String) : List<Gist>
+    suspend fun getGistList(page: Int, query: String): List<Gist>
 
-    fun getFavoriteList() : Flow<List<Gist>>
+    fun getFavoriteList(): Flow<List<Gist>>
 
     suspend fun insertFavoriteGist(gist: Gist)
 

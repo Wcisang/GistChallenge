@@ -18,7 +18,7 @@ class GistRepositoryImpl(
     override suspend fun getGistList(page: Int, query: String): List<Gist> {
         return if (query.isEmpty()) {
             service.getGistList(page)
-        }else {
+        } else {
             service.getGistListByOwnerName(query, page)
         }
     }

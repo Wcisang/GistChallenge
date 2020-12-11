@@ -2,7 +2,6 @@ package com.wcisang.favorites.ui
 
 import com.wcisang.domain.usecase.DeleteFavoriteGistUseCase
 import com.wcisang.domain.usecase.GetFavoriteGistListUseCase
-import com.wcisang.domain.usecase.InsertFavoriteGistUseCase
 import com.wcisang.testutils.GistDataFactory
 import com.wcisang.testutils.coVerifyOnce
 import io.mockk.coEvery
@@ -10,7 +9,7 @@ import io.mockk.mockk
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runBlockingTest
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
@@ -46,5 +45,4 @@ class GistFavoriteViewModelTest {
             assertEquals(it, list)
         }
     }
-
 }

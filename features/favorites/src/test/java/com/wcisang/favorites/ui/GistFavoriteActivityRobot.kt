@@ -18,7 +18,6 @@ import com.wcisang.testutils.interactions.isDisplayed
 import com.wcisang.testutils.matcher.RecyclerViewMatcher
 import io.mockk.coEvery
 import io.mockk.mockk
-import io.mockk.verify
 import kotlinx.coroutines.flow.flow
 import org.hamcrest.CoreMatchers.allOf
 import org.koin.android.viewmodel.dsl.viewModel
@@ -64,7 +63,7 @@ class GistFavoriteActivityRobot {
     }
 
     fun verifyDeleteIsCalled() {
-        coVerifyOnce{ deleteFavoriteGistUseCase.execute(any()) }
+        coVerifyOnce { deleteFavoriteGistUseCase.execute(any()) }
     }
 
     fun verifyDeleteMessageIsDisplayed() {
@@ -83,7 +82,8 @@ class GistFavoriteActivityRobot {
                     RecyclerViewMatcher.withRecyclerView(
                         R.id.rvGistFavorite
                     ).atPosition(position)
-                ), withId(R.id.ivAction)
+                ),
+                withId(R.id.ivAction)
             )
         )
 

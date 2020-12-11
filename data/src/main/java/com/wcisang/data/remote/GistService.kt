@@ -15,8 +15,8 @@ object NetworkConstants {
 interface GistService {
 
     @GET(NetworkConstants.GIST_LIST_ENDPOINT)
-    suspend fun getGistList(@Query("page") page: Int) : List<Gist>
+    suspend fun getGistList(@Query("page") page: Int): List<Gist>
 
     @GET(NetworkConstants.GIST_LIST_USER_ENDPOINT)
-    suspend fun getGistListByOwnerName(@Path("username") query: String, @Query("page") page: Int) : List<Gist>
+    suspend fun getGistListByOwnerName(@Path("username") query: String, @Query("page") page: Int): List<Gist>
 }

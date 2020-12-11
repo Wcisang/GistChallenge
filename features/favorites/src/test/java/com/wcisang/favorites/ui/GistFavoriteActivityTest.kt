@@ -3,7 +3,7 @@ package com.wcisang.favorites.ui
 import com.wcisang.testutils.RobolectricUnitTest
 import org.junit.Test
 
-class GistFavoriteActivityTest : RobolectricUnitTest(){
+class GistFavoriteActivityTest : RobolectricUnitTest() {
 
     private fun robot(func: GistFavoriteActivityRobot.() -> Unit) = GistFavoriteActivityRobot()
         .apply { func() }

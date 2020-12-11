@@ -6,8 +6,6 @@ import com.wcisang.testutils.coVerifyOnce
 import io.mockk.mockk
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
-
-import org.junit.Assert.*
 import org.junit.Test
 
 class DeleteFavoriteGistUseCaseTest {

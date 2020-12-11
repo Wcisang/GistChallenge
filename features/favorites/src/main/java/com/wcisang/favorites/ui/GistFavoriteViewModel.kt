@@ -14,7 +14,7 @@ class GistFavoriteViewModel(
     private val deleteFavoriteGistUseCase: DeleteFavoriteGistUseCase
 ) : ViewModel() {
 
-    fun getFavoriteGistList() : Flow<List<Gist>> {
+    fun getFavoriteGistList(): Flow<List<Gist>> {
         return getFavoriteGistListUseCase.execute()
     }
 

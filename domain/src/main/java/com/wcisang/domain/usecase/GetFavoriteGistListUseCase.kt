@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 class GetFavoriteGistListUseCase(private val repository: GistRepository) {
 
-    fun execute() : Flow<List<Gist>> {
+    fun execute(): Flow<List<Gist>> {
         return repository.getFavoriteList()
     }
 }

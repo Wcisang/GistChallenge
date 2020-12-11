@@ -5,11 +5,11 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.util.Pair
+import androidx.core.view.isVisible
 import coil.load
 import coil.transform.CircleCropTransformation
 import kotlinx.android.synthetic.main.view_gist_item.view.*
-import androidx.core.util.Pair
-import androidx.core.view.isVisible
 
 class GistItemView @JvmOverloads constructor(
     context: Context,

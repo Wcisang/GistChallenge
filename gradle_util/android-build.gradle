@@ -1,6 +1,12 @@
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+if (project.path.contains("features")) {
+    apply from: '../../gradle_util/klint.gradle'
+}else {
+    apply from: '../gradle_util/klint.gradle'
+}
+
 android {
     compileSdkVersion BuildVersions.compileSdkVersion
     buildToolsVersion BuildVersions.buildToolsVersion

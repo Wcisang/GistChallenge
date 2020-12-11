@@ -15,7 +15,7 @@ data class Gist(
     @JsonProperty("owner") val owner: Owner,
     @JsonProperty("url") val url: String? = null,
     @JsonProperty("files") val files: LinkedHashMap<String, File>? = null
-) : Parcelable{
+) : Parcelable {
 
     fun getFirstFileType() = files
         ?.entries

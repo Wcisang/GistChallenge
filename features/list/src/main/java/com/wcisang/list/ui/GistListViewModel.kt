@@ -26,7 +26,7 @@ class GistListViewModel(
     )
 
     fun getGistList(query: String?): Flow<PagingData<Gist>> {
-        pagingSource.search = query?: ""
+        pagingSource.search = query ?: ""
         return Pager(
             config = pageConfig,
             pagingSourceFactory = { pagingSource }
@@ -38,5 +38,4 @@ class GistListViewModel(
             insertFavoriteGistUseCase.execute(InsertFavoriteGistUseCase.Params(gist))
         }
     }
-
 }

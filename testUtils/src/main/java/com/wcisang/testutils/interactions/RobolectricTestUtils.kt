@@ -8,7 +8,6 @@ import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 
-
 fun Int.scrollAndClick() {
     onView(withId(this)).perform(scrollTo(), ViewActions.click())
 }

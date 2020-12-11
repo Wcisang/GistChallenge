@@ -8,10 +8,9 @@ import io.mockk.mockk
 import io.mockk.unmockkAll
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
-import org.junit.Before
 import org.junit.Assert.assertEquals
+import org.junit.Before
 import org.junit.Test
-
 import java.io.IOException
 
 class GistDataPagingSourceTest {

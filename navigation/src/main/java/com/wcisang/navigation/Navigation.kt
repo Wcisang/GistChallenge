@@ -9,7 +9,7 @@ class Navigation(
     private val links: Map<Screen, Class<out Activity>>
 ) {
 
-    fun getIntent(context: Context, destination: Screen) : Intent{
+    fun getIntent(context: Context, destination: Screen): Intent {
         return Intent(context, find(destination))
     }
 

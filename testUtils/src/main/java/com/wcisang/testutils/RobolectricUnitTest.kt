@@ -10,7 +10,7 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(application = TestApplication::class, sdk = [28])
-abstract class RobolectricUnitTest : AutoCloseKoinTest(){
+abstract class RobolectricUnitTest : AutoCloseKoinTest() {
 
     companion object {
 

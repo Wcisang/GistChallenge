@@ -3,7 +3,7 @@ package com.wcisang.detail.ui
 import com.wcisang.testutils.RobolectricUnitTest
 import org.junit.Test
 
-class GistDetailActivityTest : RobolectricUnitTest(){
+class GistDetailActivityTest : RobolectricUnitTest() {
 
     private fun robot(func: GistDetailActivityRobot.() -> Unit) = GistDetailActivityRobot()
         .apply { func() }
@@ -17,5 +17,4 @@ class GistDetailActivityTest : RobolectricUnitTest(){
             }
         }
     }
-
 }

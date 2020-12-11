@@ -25,7 +25,6 @@ import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
-
 class GistListActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
     private val viewModel by viewModel<GistListViewModel>()
@@ -34,7 +33,8 @@ class GistListActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     private var gistAdapter = GistPagingAdapter(
         {
             startDetail(it)
-        }, {
+        },
+        {
             addToFavorite(it)
             viewModel.insertGistToFavorite(it)
         }

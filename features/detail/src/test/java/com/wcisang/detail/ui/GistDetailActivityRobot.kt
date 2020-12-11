@@ -7,7 +7,6 @@ import com.wcisang.navigation.Screen
 import com.wcisang.testutils.GistDataFactory
 import com.wcisang.testutils.interactions.isDisplayed
 
-
 class GistDetailActivityRobot {
 
     private val gist = GistDataFactory.createGist()
@@ -34,5 +33,4 @@ class GistDetailActivityRobot {
         val file = gist.files?.entries?.iterator()?.next()?.value
         file?.filename?.isDisplayed()
     }
-
 }

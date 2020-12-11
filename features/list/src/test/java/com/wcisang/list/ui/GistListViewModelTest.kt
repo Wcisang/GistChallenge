@@ -4,7 +4,6 @@ import com.wcisang.data.remote.GistDataPagingSource
 import com.wcisang.domain.usecase.InsertFavoriteGistUseCase
 import com.wcisang.testutils.GistDataFactory
 import com.wcisang.testutils.coVerifyOnce
-import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
@@ -29,5 +28,4 @@ class GistListViewModelTest {
 
         coVerifyOnce { insertFavoriteGistUseCase.execute(InsertFavoriteGistUseCase.Params(gist)) }
     }
-
 }

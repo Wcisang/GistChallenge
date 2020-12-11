@@ -18,7 +18,7 @@ class GistCodeContentView @JvmOverloads constructor(
     }
 
     fun setGistCode(gistCode: GistCode) {
-        tvGistCodeName.text= gistCode.fileName
+        tvGistCodeName.text = gistCode.fileName
         wvGistCode.settings.run {
             loadWithOverviewMode = true
         }

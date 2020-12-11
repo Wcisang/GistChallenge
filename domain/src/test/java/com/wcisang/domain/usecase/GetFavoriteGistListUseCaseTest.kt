@@ -2,15 +2,13 @@ package com.wcisang.domain.usecase
 
 import com.wcisang.domain.repository.GistRepository
 import com.wcisang.testutils.GistDataFactory
-import com.wcisang.testutils.coVerifyOnce
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runBlockingTest
+import org.junit.Assert.assertEquals
 import org.junit.Before
-
-import org.junit.Assert.*
 import org.junit.Test
 
 class GetFavoriteGistListUseCaseTest {

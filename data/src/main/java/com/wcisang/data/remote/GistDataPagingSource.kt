@@ -12,7 +12,7 @@ class GistDataPagingSource(
     private val getGistListUseCase: GetGistListUseCase
 ) : PagingSource<Int, Gist>() {
 
-    var search : String = ""
+    var search: String = ""
         set(value) {
             refreshSearch = true
             field = value

@@ -127,7 +127,8 @@ class GistListActivityRobot {
             allOf(
                 isDescendantOfA(
                     RecyclerViewMatcher.withRecyclerView(R.id.rvGistList).atPosition(position)
-                ), withId(R.id.ivAction)
+                ),
+                withId(R.id.ivAction)
             )
         )
 
@@ -141,5 +142,4 @@ class GistListActivityRobot {
     companion object {
         private const val ERROR_MESSAGE = "ERRO AO CARREGAR"
     }
-
 }

@@ -1,9 +1,10 @@
 package com.wcisang.domain.usecase
 
 import com.wcisang.domain.repository.GistRepository
-import com.wcisang.testutils.GistDataFactory
 import com.wcisang.domain.utils.UseCaseTest
-import io.mockk.*
+import com.wcisang.testutils.GistDataFactory
+import io.mockk.coEvery
+import io.mockk.mockk
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Assert.assertEquals
 import org.junit.Before
@@ -28,5 +29,4 @@ class GetGistListUseCaseTest : UseCaseTest {
 
         assertEquals(list, returnedList)
     }
-
 }

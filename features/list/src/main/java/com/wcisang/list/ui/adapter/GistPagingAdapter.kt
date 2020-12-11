@@ -83,5 +83,4 @@ class GistPagingAdapter(
             ) = oldConcert == newConcert
         }
     }
-
 }

@@ -26,7 +26,7 @@ class GistLoadStateAdapter(private val retry: () -> Unit) : LoadStateAdapter<Gis
         private val retry: () -> Unit
     ) : RecyclerView.ViewHolder(item) {
 
-        fun bind(loadState : LoadState) {
+        fun bind(loadState: LoadState) {
             itemView.btRetry.setOnClickListener { retry.invoke() }
             if (loadState is LoadState.Error) {
                 itemView.tvError.text = loadState.error.localizedMessage

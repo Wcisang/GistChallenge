@@ -42,7 +42,7 @@ object GistDataFactory {
             filename = "01.scm",
             language = "Text",
             rawUrl = "https://gist.githubusercontent.com/dutradda/c7315d3a6e08dce073fb24f95b1be4bd/raw/b9e89610a9d9a56a6e16f5aaa19e7efdb8a0fe25/publish_output",
-            size =  244,
+            size = 244,
             type = "text/plain"
         )
 }

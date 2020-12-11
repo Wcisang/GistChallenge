@@ -5,8 +5,6 @@ import com.wcisang.data.local.mapper.mapToGist
 import com.wcisang.data.local.mapper.mapToGistLocal
 import com.wcisang.data.local.model.GistLocal
 import com.wcisang.data.remote.GistService
-import com.wcisang.domain.model.Gist
-import com.wcisang.domain.model.Owner
 import com.wcisang.domain.repository.GistRepository
 import com.wcisang.testutils.GistDataFactory
 import com.wcisang.testutils.coVerifyNever
@@ -15,11 +13,12 @@ import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.unmockkAll
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
+import org.junit.Assert.assertEquals
 import org.junit.Before
-import org.junit.Assert.*
 import org.junit.Test
 
 class GistRepositoryTest {
@@ -101,5 +100,4 @@ class GistRepositoryTest {
             ownerName = "will",
             ownerImage = "image"
         )
-
 }
