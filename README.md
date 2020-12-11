@@ -16,7 +16,7 @@
 - navigation
 - testUtils
 
-### Biliotecas utilizadas
+### Bibliotecas utilizadas
 
 - View Model
 - Jackson
