@@ -1,6 +1,7 @@
 package com.wcisang.domain.usecase
 
 import com.wcisang.domain.repository.GistRepository
+import com.wcisang.domain.utils.UseCaseTest
 import com.wcisang.testutils.GistDataFactory
 import io.mockk.every
 import io.mockk.mockk
@@ -11,7 +12,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
-class GetFavoriteGistListUseCaseTest {
+class GetFavoriteGistListUseCaseTest : UseCaseTest {
 
     private val repository: GistRepository = mockk(relaxed = true)
     private lateinit var useCase: GetFavoriteGistListUseCase

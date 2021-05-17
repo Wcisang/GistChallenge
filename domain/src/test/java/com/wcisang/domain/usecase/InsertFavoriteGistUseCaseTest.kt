@@ -1,6 +1,7 @@
 package com.wcisang.domain.usecase
 
 import com.wcisang.domain.repository.GistRepository
+import com.wcisang.domain.utils.UseCaseTest
 import com.wcisang.testutils.GistDataFactory
 import com.wcisang.testutils.coVerifyOnce
 import io.mockk.mockk
@@ -8,7 +9,7 @@ import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Test
 
-class InsertFavoriteGistUseCaseTest {
+class InsertFavoriteGistUseCaseTest : UseCaseTest {
 
     private val repository: GistRepository = mockk(relaxed = true)
     private lateinit var useCase: InsertFavoriteGistUseCase
