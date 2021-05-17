@@ -36,7 +36,6 @@ class GistListActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         },
         {
             addToFavorite(it)
-            viewModel.insertGistToFavorite(it)
         }
     )
 
