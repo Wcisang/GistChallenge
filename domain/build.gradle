@@ -6,7 +6,7 @@ dependencies {
     implementation Libs.koin
     implementation Libs.coroutines
 
-    testImplementation project(Module.testUtils)
+    testImplementation project(Modules.testUtils)
     testImplementation LibsTest.jUnit
     testImplementation LibsTest.mockk
     testImplementation LibsTest.coroutinesTest

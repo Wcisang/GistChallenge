@@ -3,8 +3,8 @@ apply from: '../gradle_util/android-build.gradle'
 
 dependencies {
 
-    implementation project(Module.domain)
-    implementation project(Module.common)
+    implementation project(Modules.domain)
+    implementation project(Modules.common)
     implementation Libs.material
     implementation LibsTest.mockk
     implementation LibsTest.robolectric

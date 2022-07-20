@@ -9,13 +9,13 @@ android {
 
 dependencies {
 
-    implementation project(Module.gistList)
-    implementation project(Module.detail)
-    implementation project(Module.favorites)
-    implementation project(Module.common)
-    implementation project(Module.domain)
-    implementation project(Module.data)
-    implementation project(Module.navigation)
+    implementation project(Modules.gistList)
+    implementation project(Modules.detail)
+    implementation project(Modules.favorites)
+    implementation project(Modules.common)
+    implementation project(Modules.domain)
+    implementation project(Modules.data)
+    implementation project(Modules.navigation)
 
     implementation Libs.kotlinStd
     implementation Libs.coreKtx

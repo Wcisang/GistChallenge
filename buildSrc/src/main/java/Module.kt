@@ -1,4 +1,4 @@
-object Module {
+object Modules {
     const val domain = ":domain"
     const val data = ":data"
     const val customViews = ":customViews"

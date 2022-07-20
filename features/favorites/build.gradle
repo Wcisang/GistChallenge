@@ -2,10 +2,10 @@ apply plugin: 'com.android.library'
 apply from: '../../gradle_util/android-build.gradle'
 
 dependencies {
-    implementation project(Module.data)
-    implementation project(Module.domain)
-    implementation project(Module.common)
-    implementation project(Module.customViews)
+    implementation project(Modules.data)
+    implementation project(Modules.domain)
+    implementation project(Modules.common)
+    implementation project(Modules.customViews)
 
     implementation Libs.coreKtx
     implementation Libs.appCompat
@@ -17,7 +17,7 @@ dependencies {
     implementation Libs.viewModel
     implementation Libs.lifecycleKtx
 
-    testImplementation project(Module.testUtils)
+    testImplementation project(Modules.testUtils)
     testImplementation LibsTest.espressoCore
     testImplementation LibsTest.espressoContrib
     testImplementation LibsTest.robolectric

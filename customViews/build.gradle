@@ -3,7 +3,7 @@ apply from: '../gradle_util/android-build.gradle'
 
 dependencies {
 
-    implementation project(Module.common)
+    implementation project(Modules.common)
     implementation Libs.coreKtx
     implementation Libs.appCompat
     implementation Libs.material
